@@ -1,0 +1,37 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Data (large files)
+data/ace05*/
+data/ere*/
+data/acm/
+data/dblp/
+data/imdb/
+data/input/
+data/output/
+
+# Models and outputs
+outputs/
+runs/
+*.mdl
+*.pt
+*.pth
+result.*.json
+
+# BERT cache
+bert/
+cache/
+
+# Stanford NLP models
+resource/stanford/
+
+# Notebooks checkpoints
+notebooks/.ipynb_checkpoints/
+*.ipynb
+
+# OS
+.DS_Store

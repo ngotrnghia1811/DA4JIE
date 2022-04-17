@@ -1,0 +1,26 @@
+# DA4JIE: Domain Adaptation for Joint Information Extraction
+# Core dependencies
+
+# Deep learning
+torch>=1.8.0
+transformers==3.5.1
+
+# NLP tools
+nltk>=3.5
+lxml>=4.6
+trankit>=1.1.0
+
+# Utility
+tqdm>=4.60
+easydict>=1.9
+packaging>=20.9
+
+# Data / numerics
+numpy>=1.19
+
+# Optional visualization (for GDA module)
+# matplotlib>=3.3
+# visdom>=0.1.8
+
+# Data preparation (optional)
+# stanfordnlp>=0.2.0
