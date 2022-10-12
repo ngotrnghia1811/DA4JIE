@@ -1,0 +1,53 @@
+{
+  "_comment": "Configuration for FourIE on ACE 2005-E+ with Hierarchical GCN.",
+  "model_type": "fourie",
+
+  "bert_model_name": "bert-large-cased",
+  "bert_cache_dir": "<BERT_CACHE_DIR>",
+  "multi_piece_strategy": "average",
+  "bert_dropout": 0.5,
+  "use_extra_bert": false,
+  "extra_bert": -1,
+
+  "linear_dropout": 0.4,
+  "linear_bias": true,
+  "use_entity_type": true,
+  "relation_mask_self": true,
+  "relation_directional": false,
+  "symmetric_relations": ["PER-SOC"],
+
+  "gcn_config": {
+    "num_layers": 2,
+    "skip_connection": true,
+    "anneal": false
+  },
+  "gcn_drop": 0.3,
+  "task_embed_dim": 32,
+  "type_embed_dim": 150,
+  "dom_emb_type": ["ace", "acm", "dblp", "imdb"],
+  "dom_emb_size": [32, 32],
+
+  "grda": false,
+
+  "train_file": "<TRAIN_FILE_PATH>",
+  "dev_file": "<DEV_FILE_PATH>",
+  "test_file": "<TEST_FILE_PATH>",
+  "log_path": "<OUTPUT_DIR>",
+  "valid_pattern_path": "<VALID_PATTERN_DIR>",
+  "ignore_title": false,
+  "ignore_first_header": false,
+
+  "accumulate_step": 1,
+  "batch_size": 10,
+  "eval_batch_size": 10,
+  "max_epoch": 60,
+  "learning_rate": 1e-3,
+  "bert_learning_rate": 1e-5,
+  "weight_decay": 1e-3,
+  "bert_weight_decay": 1e-5,
+  "warmup_epoch": 5,
+  "grad_clipping": 5.0,
+
+  "use_gpu": true,
+  "gpu_device": 0
+}
